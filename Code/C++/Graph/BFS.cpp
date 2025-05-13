@@ -43,8 +43,8 @@ int main() {
     adj[3].push_back(4);
     adj[4].push_back(3);
 
-    Solution obj;
-    vector<int> bfs = obj.bfsOfGraph(V, adj);
+    Graph g;
+    vector<int> bfs = g.bfsOfGraph(V, adj);
 
     cout << "BFS Traversal: ";
     for (int i : bfs) {
