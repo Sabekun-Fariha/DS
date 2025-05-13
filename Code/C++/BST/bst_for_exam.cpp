@@ -107,7 +107,6 @@ int main(){
     }else{
         cout<<"Not Found in the Tree."<<endl;
     }
-
     vector<Node*>v;
     findMin(root, v);
     findMax(root, v);
@@ -115,6 +114,13 @@ int main(){
     int max = v[v.size()-1]->data;
     cout<<"Minimum: "<<min<<endl;
     cout<<"Maximum: "<<max<<endl;
-    cout<<"Difference between max and min: "<<max-min<<endl;
-    
+    cout<<"Difference between max and min: "<<max-min<<endl;  
 }
+/* Inorder: 1 3 5 6 7 8 
+Preorder: 5 1 3 6 7 8 
+Enter a key to search: 6
+Found in the Tree.
+Minimum: 1
+Maximum: 8
+Difference between max and min: 7
+*/
